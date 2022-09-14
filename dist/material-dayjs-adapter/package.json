@@ -1,17 +1,11 @@
 {
-  "name": "@tabuckner/material-dayjs-adapter",
-  "version": "2.0.1",
+  "name": "material-dayjs-adapter",
+  "version": "1.0.4",
   "schematics": "./schematics/collection.json",
   "author": {
-    "name": "Taylor Buckner",
-    "url": "https://github.com/tabuckner/"
+    "name": "Simon Kobler",
+    "url": "https://github.com/koblers/"
   },
-  "contributors": [
-    {
-      "name": "Jan van Rossum",
-      "url": "https://github.com/vanrossumict"
-    }
-  ],
   "description": "A MatDateAdapter for Dayjs to reduce dependency sizes when compared to MomentJS based adapters.",
   "keywords": [
     "angular",
@@ -30,23 +24,35 @@
   ],
   "license": "MIT",
   "peerDependencies": {
-    "@angular/common": ">=8.0.0",
-    "@angular/core": ">=8.0.0",
-    "@angular/material": ">=8.0.0",
-    "dayjs": ">= 1.8.17",
-    "tslib": "^1.10.0"
+    "@angular/common": ">=14.0.0",
+    "@angular/core": ">=14.0.0",
+    "@angular/material": ">=14.0.0",
+    "dayjs": ">= 1.11.5"
   },
   "repository": {
-    "url": "https://github.com/tabuckner/material-dayjs-adapter"
+    "url": "https://github.com/koblers/material-dayjs-adapter"
   },
-  "main": "bundles/tabuckner-material-dayjs-adapter.umd.js",
-  "module": "fesm5/tabuckner-material-dayjs-adapter.js",
-  "es2015": "fesm2015/tabuckner-material-dayjs-adapter.js",
-  "esm5": "esm5/tabuckner-material-dayjs-adapter.js",
-  "esm2015": "esm2015/tabuckner-material-dayjs-adapter.js",
-  "fesm5": "fesm5/tabuckner-material-dayjs-adapter.js",
-  "fesm2015": "fesm2015/tabuckner-material-dayjs-adapter.js",
-  "typings": "tabuckner-material-dayjs-adapter.d.ts",
-  "metadata": "tabuckner-material-dayjs-adapter.metadata.json",
-  "sideEffects": false
+  "module": "fesm2015/tabuckner-material-dayjs-adapter.mjs",
+  "es2020": "fesm2020/tabuckner-material-dayjs-adapter.mjs",
+  "esm2020": "esm2020/tabuckner-material-dayjs-adapter.mjs",
+  "fesm2020": "fesm2020/tabuckner-material-dayjs-adapter.mjs",
+  "fesm2015": "fesm2015/tabuckner-material-dayjs-adapter.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2020": "./esm2020/tabuckner-material-dayjs-adapter.mjs",
+      "es2020": "./fesm2020/tabuckner-material-dayjs-adapter.mjs",
+      "es2015": "./fesm2015/tabuckner-material-dayjs-adapter.mjs",
+      "node": "./fesm2015/tabuckner-material-dayjs-adapter.mjs",
+      "default": "./fesm2020/tabuckner-material-dayjs-adapter.mjs"
+    }
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
 }

@@ -10,7 +10,7 @@
       "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "ng-packagr:build",
           "options": {
             "tsConfig": "projects/material-dayjs-adapter/tsconfig.lib.json",
             "project": "projects/material-dayjs-adapter/ng-package.json"

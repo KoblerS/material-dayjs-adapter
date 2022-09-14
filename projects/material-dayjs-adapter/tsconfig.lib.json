@@ -12,10 +12,12 @@
     ]
   },
   "angularCompilerOptions": {
+    "allowSyntheticDefaultImports": true,
     "skipTemplateCodegen": true,
     "strictMetadataEmit": true,
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true,
+    "esModuleInterop": true,
     "enableResourceInlining": true
   },
   "exclude": [
